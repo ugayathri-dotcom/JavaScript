@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script >
+    var a="Gayathri";
+    var age="29";
+    var mark=[100,90,99,100,90];
+    var total=0;
+    var count=0;
+    document.write("Name of student :"+a+"<br>"+"Age is :"+age+"<br>"+"Marks are:"+mark+"<br>")
+   for (let n of mark)
+   {
+    total+=n;
+   }
+   for(let n of mark)
+   {
+    if (n<35)
+   {
+    count++;
+   }
+   }
+   if(count==0)
+   {
+    document.write("Pass")
+   }
+   else
+   {
+    document.write("Fail")
+   }
+    if (total>=400)
+   {
+    document.write("Grade A")
+   }
+
+
+    doucment.write("Total is"+total)
+
+
+  </script>
+  
+</body>
+</html>
