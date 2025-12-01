@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let angle = parseInt(prompt("Enter angle"));
+        let choice = prompt("Enter 'r' to convert radians to degrees, 'd' to convert degrees to radians");
+        if (choice.toLowerCase() === 'r') {
+            let degrees = Math.round(angle * (180 / Math.PI) * 100) / 100;  
+            document.write(angle + " radians = " + degrees + " degrees");
+        } 
+        else if (choice.toLowerCase() === 'd') {
+            let radians = Math.round(angle * (Math.PI / 180) * 100) / 100; 
+            document.write(angle + " degrees = " + radians + " radians");
+        } 
+        else {
+            document.write("Invalid choice!");
+        }
+
+    </script>
+</body>
+</html>

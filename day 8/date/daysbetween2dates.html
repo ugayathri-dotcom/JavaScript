@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = new Date(prompt("Enter first date (YYYY-MM-DD):"));
+        let y = new Date(prompt("Enter second date (YYYY-MM-DD):"));
+        let diff = Math.abs(y - x);
+        let total = diff / (1000 * 60 * 60 * 24);
+        document.write("Days Difference: " + total + "<br><br>");
+
+    </script>
+</body>
+</html>

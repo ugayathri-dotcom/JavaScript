@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mainstr = prompt("Enter main string");
+        let substr  = prompt("Enter substring to search");
+        mainstr = mainstr.toLowerCase();
+        substr  = substr.toLowerCase();
+        if (mainstr.includes(substr)) {
+            document.write(substr+" Substring found in "+mainstr);
+        } else {
+            document.write(substr+" Substring NOT found in "+mainstr);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sentence = prompt("Enter a sentence");
+        let words = sentence.split(" ");
+        let longest = "";
+        for (let i = 0; i < words.length; i++) {
+            if (words[i].length > longest.length) {
+                longest = words[i];
+            }
+        }
+        document.write("Longest word: " + longest);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let da1 = new Date(prompt("Enter first date (DD-MM-YYYY):"));
+        let da2 = new Date(prompt("Enter second date (DD-MM-YYYY):"));
+        if (da1 < da2) {
+            document.write("First date is earlier",+da1+"<br><br>");
+        } else if (da1 > da2) {
+            document.write("Second date is earlier",+da2+"<br><br>");
+        } else {
+            document.write("Both dates are the same<br><br>");
+        }
+
+    </script>
+</body>
+</html>

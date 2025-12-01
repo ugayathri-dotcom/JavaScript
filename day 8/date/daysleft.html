@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let today = new Date();
+        let last = new Date(today.getFullYear(), 11, 31); //end of year dec(11) 31(day)
+        
+        let diff = last - today;
+       
+        let rem= Math.ceil(diff / (1000 * 60 * 60 * 24));
+        document.write("Days left in this year: " + rem + "<br><br>");
+
+    </script>
+</body>
+</html>
