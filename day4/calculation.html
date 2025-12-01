@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let a=parseInt(prompt("Enter A value"));
+    let b=parseInt(prompt("Enter B value"));
+    let c=parseInt(prompt("Enter C value  1.Addition  2.Subtraction 3.Multiplication 4.Division"));
+    switch(c)
+    {
+      case 1:
+        var d=a+b;
+        document.write("ADDITION "+d);
+        break;
+        case 2:
+        var d=a-b;
+        document.write("SUBTRACTION" +d);
+        break;
+        case 3:
+        var d=a*b;
+        document.write("MULTIPLICATION"+d);
+        break;
+        case 4:
+        var d=a/b;
+        document.write("DIVISION"+d);
+        break;
+        default:
+          document.write("Enter a valid C value");
+
+    }
+    
+  </script>
+  
+</body>
+</html>
