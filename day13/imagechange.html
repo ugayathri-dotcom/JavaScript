@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Change on button click</title>
+</head>
+<body>
+  <div id="main">
+  <img  id="i" src="./shivan.jpeg">
+  <button id="button">Change</button>
+  </div>
+  <script>
+    let a=document.getElementById("i");
+    let c=document.getElementById("button")
+    c.addEventListener("click",()=>{
+      let b=document.createElement("img")
+      b.src="./download.jpg";
+      b.id="s";
+      document.getElementById("main").replaceChild(s,a)
+   
+ 
+
+    })
+    
+
+  </script>
+</body>
+</html>

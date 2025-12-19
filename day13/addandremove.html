@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="in" placeholder="Enter item">
+  <button id="add">Add Item</button>
+  <script>
+    let input=document.getElementById("in");
+    let button=document.getElementById("add");
+    button.onclick=()=>{
+      if(!input.value) return;
+      let p=document.createElement('p')
+      p.textContent=input.value;
+      p.onclick=()=>p.remove();
+      document.body.appendChild(p);
+      input.value='';
+    }
+
+  </script>
+  
+</body>
+</html>

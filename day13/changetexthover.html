@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Text on hover</title>
+
+</head>
+<body>
+  <p id="p">Hello world</p>
+<script>
+  let p=document.getElementById("p")
+  p.addEventListener("mouseover",()=>{
+    p.textContent="Text Hovered"
+  })
+  p.addEventListener("mouseout",()=>{
+    p.textContent="Good bye"
+  })
+</script>
+  
+</body>
+</html>

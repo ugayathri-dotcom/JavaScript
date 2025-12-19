@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic color change</title>
+</head>
+<body>
+  <div id="a"></div>
+  <div id="b"></div>
+  <div id="c"></div>
+  <script>
+    let a=document.getElementById("a");
+    let b=document.getElementById("b");
+    let c=document.getElementById("c");
+    a.style.width="100px"
+    a.style.height="100px"
+    a.style.backgroundColor="red"
+    b.style.width="100px"
+    b.style.height="100px"
+    b.style.backgroundColor="green"
+    c.style.width="100px"
+    c.style.height="100px"
+    c.style.backgroundColor="yellow"
+    a.addEventListener("click",()=>{
+      document.body.style.backgroundColor="red"
+    })
+    b.addEventListener("click",()=>{
+      document.body.style.backgroundColor="green"
+    })
+    c.addEventListener("click",()=>{
+      document.body.style.backgroundColor="yellow"
+    })
+  </script>
+
+  </div>
+  
+</body>
+</html>
