@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mouse over and out</title>
+</head>
+
+  <style>
+    div
+    {
+background-color: aqua;
+    }
+
+  </style>
+  <script>
+    function large(x)
+    {
+      x.style.texttransform="uppercase";
+      x.style.background="red";
+
+    }
+    function small(x)
+    {
+      x.style.texttransform="lowercase";
+      x.style.backgroundcolor="orange";
+
+    }
+  </script>
+  <body>
+    <div onmouseover="large(this)" onmouseout="small(this)"> hello world</div>
+</body>
+</html>

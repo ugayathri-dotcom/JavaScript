@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Round to square</title>
+  <style>
+    div{
+      height: 200px;
+      width:200px;
+      background:yellowgreen;
+      transition:border-radius 33px 0.5s;
+     }
+  </style>
+
+
+  <script>
+    function round(x)
+    {
+      x.style.border.radius="50%";
+     
+      x.style.background="pink";
+    }
+    function rectangle(x)
+    {
+      x.style.height="100px";
+      x.style.width="300px";
+      x.style.background="yellow";
+    }
+  </script>
+  <body>
+  <div onmouseover="round(this)" onmouseout="rectangle(this)"></div>
+  
+</body>
+</html>
