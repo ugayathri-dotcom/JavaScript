@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let a=[1,2,3,4,5,6,8]
+    let child=a.filter((ele,i,array)=>
+  {
+    return ele%2==0
+  })
+  document.write("Even nos",child+"<br>")
+  let c=child.reduce((sum,num)=>sum+num,0)
+  document.write("Sum of numbers using reduce",c)
+  </script>
+  
+</body>
+</html>
